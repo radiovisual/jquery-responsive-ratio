@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Ratio Plugin Demo</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="../build/jquery.responsive-ratio.min.js"></script>
+
+    <style>
+        #wrapper {
+            width:80%;
+            margin: 0 auto;
+        }
+        iframe {
+            width: 100% !important;
+        }
+    </style>
+
+    <script>
+        $(function() {
+            $('#wrapper iframe').makeResponsive();
+        });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CdtrfXK7bcg" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+
+</body>
+</html>
