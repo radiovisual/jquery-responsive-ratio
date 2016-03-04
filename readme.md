@@ -2,6 +2,7 @@
 
 > Force DOM elements to be responsive at a specific aspect ratio.
 
+**Note:** This plugin is brand new, and does not have any unit tests. I am currently using this plugin and it works to suit my needs in the browser, but it needs unit tests. Until I find the time, pull requests welcomed.
 
 ## Install
 
