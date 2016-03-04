@@ -8,9 +8,13 @@
     <script src="../build/jquery.responsive-ratio.min.js"></script>
 
     <style>
-        #wrapper {
-            width:80%;
-            margin: 0 auto;
+        body {
+            text-align: center;
+            color: #133b2b;
+        }
+        #wrapper1, #wrapper2  {
+            width:40%;
+            margin: 20px auto;
         }
         iframe {
             width: 100% !important;
@@ -19,15 +23,23 @@
 
     <script>
         $(function() {
-            $('#wrapper iframe').makeResponsive();
+            $('#wrapper1 iframe').makeResponsive();
+            $('#wrapper2 iframe').makeResponsive({ratio:1});
         });
     </script>
 </head>
 <body>
-    <div id="wrapper">
+    <p>Resize the browser to see the responsive action.</p>
+
+    <div id="wrapper1">
+        <b>Aspect Ratio (default):</b> 0.563
         <iframe width="560" height="315" src="https://www.youtube.com/embed/CdtrfXK7bcg" frameborder="0" allowfullscreen></iframe>
     </div>
 
+    <div id="wrapper2">
+        <b>Aspect Ratio (square):</b> 1
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CdtrfXK7bcg" frameborder="0" allowfullscreen></iframe>
+    </div>
 
 </body>
 </html>
