@@ -7,14 +7,15 @@
  * https://github.com/substack/node-browserify
  * @license MIT
  */
-(function ($, window, document, undefined) { // eslint-disable-line no-shadow-restricted-names, no-unused-vars
+(function ($, window, document, undefined) {
 	'use strict';
 
 	var debounce = require('lodash.debounce');
 
 	var pluginName = 'makeResponsive';
 	var defaults = {
-		ratio: 0.563
+		ratio: 0.563,
+		class: 'responsive-ratio'
 	};
 
 	function Plugin(element, options) {
@@ -39,8 +40,13 @@
 
 		setResponsive: function (settings) {
 			var el = $(this.element);
+
+			if (!el.hasClass(settings.class)) {
+				el.addClass(settings.class);
+			}
+
 			var ratio = settings.ratio;
-			el.attr('height', el.width() * ratio + 'px');
+			el.attr('height', Math.floor(el.width() * ratio) + 'px');
 		}
 	});
 
@@ -53,4 +59,4 @@
 			}
 		});
 	};
-})(jQuery, window, document); // eslint-disable-line no-undef
+})(jQuery, window, document);

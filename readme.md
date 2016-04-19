@@ -2,7 +2,9 @@
 
 > Force DOM elements to be responsive at a specific aspect ratio.
 
-**Note:** This plugin is brand new, and [does not have any unit tests](https://github.com/radiovisual/jquery-responsive-ratio/issues/1). I am currently using this plugin and it works to suit my needs in the browser, but it needs unit tests. Until I find the time, pull requests welcomed.
+**Note:** This plugin is brand new, and [does not have any unit tests](https://github.com/radiovisual/jquery-responsive-ratio/issues/1).
+Because it is in the `0.x` release, you can expect lots of little changes to occur. Pull requests welcomed.
+
 
 ## Install
 
@@ -44,6 +46,12 @@ Default: `0.563`
 
 The aspect ratio you want to force on the jQuery element. 
 
+##### class
+
+Type: `string`  
+Default: `responsive-ratio`
+
+The class name to assign to elements targeted by this plugin.
 
 ## License
 
