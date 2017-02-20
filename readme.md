@@ -4,7 +4,7 @@
 keeping video elements displaying at their correct aspect ratio in responsive
 situations.
 
-**Note:** This plugin is brand new, and [does not have any unit tests](https://github.com/radiovisual/jquery-responsive-ratio/issues/1).
+:boom: **Note:** This plugin is brand new, and [does not have any unit tests](https://github.com/radiovisual/jquery-responsive-ratio/issues/1).
 Because it is in the `0.x` release, you can expect lots of little changes to occur.
 Pull requests welcome.
 

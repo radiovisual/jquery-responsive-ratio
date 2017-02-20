@@ -30,6 +30,7 @@
 	$.extend(Plugin.prototype, {
 		init: function () {
 			var self = this;
+			var element = $(this.element);
 
 			$(window).resize(debounce(function () {
 				self.setResponsive(self.settings);
