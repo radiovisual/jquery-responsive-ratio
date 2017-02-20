@@ -12,8 +12,8 @@
             text-align: center;
             color: #133b2b;
         }
-        #wrapper1, #wrapper2  {
-            width:40%;
+        #wrapper1, #wrapper2, #wrapper3  {
+            width:60%;
             margin: 20px auto;
         }
         iframe {
@@ -24,7 +24,8 @@
     <script>
         $(function() {
             $('#wrapper1 iframe').makeResponsive();
-            $('#wrapper2 iframe').makeResponsive({ratio:1});
+            $('#wrapper2 iframe').makeResponsive({ratio:'1'});
+            $('#wrapper2 iframe').makeResponsive({ratio:'4:3'});
         });
     </script>
 </head>
@@ -32,13 +33,18 @@
     <p>Resize the browser to see the responsive action.</p>
 
     <div id="wrapper1">
-        <b>Aspect Ratio (default):</b> 0.563
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CdtrfXK7bcg" frameborder="0" allowfullscreen></iframe>
+        <b>Aspect Ratio (default):</b> '16:9'
+        <iframe width="560px" height="315px" src="https://www.youtube.com/embed/CdtrfXK7bcg" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div id="wrapper2">
-        <b>Aspect Ratio (square):</b> 1
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CdtrfXK7bcg" frameborder="0" allowfullscreen></iframe>
+        <b>Aspect Ratio (square):</b> '1'
+        <iframe width="560px" height="315px" src="https://www.youtube.com/embed/CdtrfXK7bcg" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div id="wrapper3">
+        <b>Aspect Ratio :</b> '4:3'
+        <iframe width="560px" height="315px" src="https://www.youtube.com/embed/CdtrfXK7bcg" frameborder="0" allowfullscreen></iframe>
     </div>
 
 </body>

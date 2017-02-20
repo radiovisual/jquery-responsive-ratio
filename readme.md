@@ -1,9 +1,12 @@
 # jquery-responsive-ratio [![Build Status](https://travis-ci.org/radiovisual/jquery-responsive-ratio.svg?branch=master)](https://travis-ci.org/radiovisual/jquery-responsive-ratio)
 
-> Force DOM elements to be responsive at a specific aspect ratio.
+> Force DOM elements to be responsive at a specific aspect ratio. Useful for
+keeping video elements displaying at their correct aspect ratio in responsive
+situations.
 
 **Note:** This plugin is brand new, and [does not have any unit tests](https://github.com/radiovisual/jquery-responsive-ratio/issues/1).
-Because it is in the `0.x` release, you can expect lots of little changes to occur. Pull requests welcomed.
+Because it is in the `0.x` release, you can expect lots of little changes to occur.
+Pull requests welcome.
 
 
 ## Install
@@ -14,7 +17,7 @@ with [npm](https://www.npmjs.com/package/jquery-responsive-ratio):
 $ npm install --save jquery-responsive-ratio
 ```
 
-or manually: 
+or manually:
 
 ```html
 <script src='js/vendor/jquery.responsive-ratio.min.js'></script>
@@ -35,16 +38,16 @@ jQuery('iframe').makeResponsive();
 #### $object
 
 *Required*  
-The jquery object or collection you want to make responsive.  
+The jQuery object or collection you want to make responsive.  
 
 #### options
 
 ##### ratio
 
-Type: `number`  
-Default: `0.563`
+Type: `string`  
+Default: `'16:9'`
 
-The aspect ratio you want to force on the jQuery element. 
+The aspect ratio you want to force on the jQuery element.
 
 ##### class
 

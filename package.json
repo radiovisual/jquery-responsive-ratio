@@ -1,6 +1,6 @@
 {
   "name": "jquery-responsive-ratio",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "Force DOM elements to be responsive at a specific aspect ratio.",
   "license": "MIT",
   "repository": "radiovisual/jquery-responsive-ratio",
