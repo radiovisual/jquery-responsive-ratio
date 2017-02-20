@@ -1,13 +1,10 @@
 # jquery-responsive-ratio [![Build Status](https://travis-ci.org/radiovisual/jquery-responsive-ratio.svg?branch=master)](https://travis-ci.org/radiovisual/jquery-responsive-ratio)
 
+:boom: **DEPRECATED:** Do not use this module. No future work will be done here. Use [FitVids](https://github.com/davatron5000/FitVids.js/) instead. This module was meant to solve the problem of getting fluid (responsive) video embeds, which FitVids does nicely. :+1: :hamburger:
+
 > Force DOM elements to be responsive at a specific aspect ratio. Useful for
 keeping video elements displaying at their correct aspect ratio in responsive
 situations.
-
-:boom: **Note:** This plugin is brand new, and [does not have any unit tests](https://github.com/radiovisual/jquery-responsive-ratio/issues/1).
-Because it is in the `0.x` release, you can expect lots of little changes to occur.
-Pull requests welcome.
-
 
 ## Install
 
